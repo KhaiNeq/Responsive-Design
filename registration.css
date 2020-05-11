@@ -1,0 +1,66 @@
+@charset "utf-8";
+/* CSS Document */
+
+#login_and_register {
+	position: relative;
+	width: 100%;
+	height: 4vh;
+}
+
+#register {
+	position: absolute;
+	width: 10%;
+	float: left;
+	clear: left;
+	z-index: 10;
+	top: 10%;
+	height: 10%;
+	left: 0;
+	font-size: 25px;
+	cursor: pointer;
+}
+
+#login {
+	position: absolute;
+	width: 10%;
+	clear: left;
+	float: left;
+	z-index: 10;
+	left: 7%;
+	height: 10%;
+	top: 10%;
+	font-size: 25px;
+	cursor: pointer;
+}
+
+#modalform {
+	position: absolute;
+	z-index: 10;
+	width: 50vw;
+	height: 50vh;
+	left: 25%;
+	top: 25%;
+	border: black 2px solid;
+	background-color: aliceblue;
+	display: none;
+}
+
+.modalforminput {
+	position: relative;
+	width: 50%;
+	height: 3vh;
+	clear: left;
+	float: left;
+	top: 5vh;
+	left: 25%;
+}
+
+label {
+	position: relative;
+	width: 50%;
+	height: 3vh;
+	clear: left;
+	float: left;
+	top: 5vh;
+	left: 25%;
+}
