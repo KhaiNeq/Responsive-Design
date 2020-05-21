@@ -27,22 +27,41 @@ $("#login_formsubmit").on("click", function() {
 
 	if (login_name === storagename & login_email === storageemail & login_password === storagepassword) {
 
-	alert("Registered name matches Login name")
+	alert("You have successfully Logged in")
+
+	$(#"login_form").toggle();
+
+	$("#mask").toggle();
+
+	$("#loginmessage").("Welcome: " + login_name);
+
+	$("#login").unbind().text("Logout").attr("id", "logout")
+
+	$("#logout").bind("click", function() {
+
+		//alert("Logout button works");
+
+		localStorage.clear();
+
+		$("#loginmessage").text("Not Logged In");
+
+		$("#logout").unbind().text("Login").attr("id", "login")
+
+		$("#login").bind("Click", function() { 
+
+			$("#login_form").toggle();
+			
+			$("#mask").toggle();
+
+		})
+			// body...
+		});
 
 	} else {
 
 		alert("Something went wrong, Try Again.")
 
-
-
-$("#login_name").val("");
-	
-$("#login_email").val("");
-	
-$("#login_password").val("");
-
-});
-
+	}
 
 
 
