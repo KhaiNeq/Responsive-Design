@@ -40,13 +40,13 @@
 		z-index: 1;
 	}
 
-#header {
+	#header {
 	position: relative;
 	width: 100vw;
 	height: 15vh;
 	clear: left;
 	float: left;
-}
+	}
 
 	#flex-container1 {
 		position: relative;
@@ -143,6 +143,7 @@
 		left: 25%;
 		top: 2vh;
 	}
+
 	#video1 {
 	position: relative;
 	float: left;

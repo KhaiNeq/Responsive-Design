@@ -5,7 +5,17 @@ $(document).ready(function(){
 	
 	//alert("Registration button is working");
 	
-	$("#modalform").toggle();
+	$("#registration_form").toggle();
+	
+	$("#mask").toggle();
+	
+});
+
+	$("#login").click(function() {
+	
+	//alert("Login button is working");
+	
+	$("#login_form").toggle();
 	
 	$("#mask").toggle();
 	
@@ -13,11 +23,11 @@ $(document).ready(function(){
 
 $("#mask").click(function() {
 	
-	//alert("Registration button is working");
+	$("#login_form").hide();
 	
-	$("#modalform").toggle();
-	
-	$("#mask").toggle();
+	$("#registration_form").hide();
+
+	$("#mask").hide();
 	
 });
 

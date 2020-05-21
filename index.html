@@ -28,36 +28,64 @@
 	
 	<div id="mask"></div>
 	
-	<div id="modalform">
+	<div id="registration_form">
 	
-		<form id="modalform1">
+		<form id="registration_form1" autocomplete="off">
+
+			<label id="registration_title">Registration Form</label>
 		
 			<label>Name</label>
 			
-			<input id="name" class="modalforminput" type="text" required>
+			<input id="name" class="registration_forminput" type="text" placeholder="Name" required>
 			
 			<label>Email</label>
 			
-			<input id="email" class="modalforminput" type="email" required>
+			<input id="email" class="registration_forminput" type="email" placeholder="Email" required>
 			
 			<label>Password</label>
 			
-			<input name="password" id="password" class="modalforminput" type="password" required>
+			<input name="password" id="password" class="registration_forminput" type="password" placeholder="Password" required>
 		
 			<label>Repeat Password</label>
 			
-			<input name="repeat_password" id="repeat_password" class="modalforminput" type="password" required>
+			<input name="repeat_password" id="repeat_password" class="registration_forminput" type="password" placeholder="Repeat Password" required>
 
-			<div id="message" class="modalforminput"></div>
+			<div id="message" class="registration_forminput"></div>
 			
-			<input id="formsubmit" class="modalforminput" type="submit" value="Click to submit Registration">
+			<input id="formsubmit" class="registration_forminput" type="submit" value="Click to submit Registration">
+		
+	</form>
+	
+
+	
+	</div>
+	
+	<div id="login_form">
+	
+		<form id="login_form1">
+
+			<label id="login_title">Login Form</label>
+		
+			<label>Name</label>
+			
+			<input id="login_name" class="login_forminput" type="text" required>
+			
+			<label>Email</label>
+			
+			<input id="login_email" class="login_forminput" type="email" required>
+			
+			<label>Password</label>
+			
+			<input name="login_password" id="password" class="login_forminput" type="password" required>
+			
+			<input id="login_formsubmit" class="login_forminput" type="submit" value="Login">
 		
 	</form>
 	
 	
 	
 	</div>
-	
+
 	<header id="header" class="header">
 		
 		<div id="login_and_register">
@@ -225,10 +253,16 @@
 	
 	</script>
 	
-	<script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript" src="js/index.js">
+		
+	</script>
 	
-	<script type="text/javascript" src="js/registration.js"></script>
+	<script type="text/javascript" src="js/registration.js">
+		
+	</script>
 
-	<script type="text/javascript" src="js/login.js"></script>
+	<script type="text/javascript" src="js/login.js">
+		
+	</script>
 	
 </html>

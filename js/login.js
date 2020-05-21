@@ -1,32 +1,45 @@
 $(document).ready(function(){
 
 
-$("#loginname").val("");
+$("#login_name").val("");
 	
-$("#loginemail").val("");
+$("#login_email").val("");
 	
-$("#loginpassword").val("");
+$("#login_password").val("");
 	
-$("#loginrepeat_password").val("");
-
-
 $("#login_formsubmit").on("click", function() {
 
-	var login_name = $("#loginname").val();
+	event.preventDefault();
 
-	var login_email = $("#loginemail").val();
+	var login_name = $("#login_name").val();
 
-	var login_password = $("#loginpassword").val();
+	var login_email = $("#login_email").val();
+
+	var login_password = $("#login_password").val();
 
 	//alert(login_name + ", " + login_email + ", " + login_password)
 
-$("#loginname").val("");
+	var storagename = localStorage.getItem("registration_name");
+
+	var storageemail = localStorage.getItem("registration_email");
+
+	var storagepassword = localStorage.getItem("registration_password");
+
+	if (login_name === storagename & login_email === storageemail & login_password === storagepassword) {
+
+	alert("Registered name matches Login name")
+
+	} else {
+
+		alert("Something went wrong, Try Again.")
+
+
+
+$("#login_name").val("");
 	
-$("#loginemail").val("");
+$("#login_email").val("");
 	
-$("#loginpassword").val("");
-	
-$("#loginrepeat_password").val("");
+$("#login_password").val("");
 
 });
 

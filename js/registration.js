@@ -1,4 +1,3 @@
-
 $(document).ready(function(){
 
 //emptying the form inputs of any residual values
@@ -10,12 +9,8 @@ $("#password").val("");
 	
 $("#repeat_password").val("");
 	
-	
-	
-	
-	
-	
-	
+
+
 $("#formsubmit").on("click", function() {
 	
 	//alert("The form has successfully been submitted.")
@@ -23,25 +18,25 @@ $("#formsubmit").on("click", function() {
 	
 	//prevents default button submit button action
 	
-	event.preventDefault;
+	event.preventDefault();
 	
 	//setting name variable from name form input
 	
-	var name = $("#name").val();
+	var registration_name = $("#name").val();
 	
 	//setting name variable from email form input
 	
-	var email = $("#email").val();
+	var registration_email = $("#email").val();
 	
 	//setting name variable from password form input
 	
-	var password = $("#password").val();
+	var registration_password = $("#password").val();
 	
 	//setting name variable from repeat_password form input
 	
-	var repeat_password = $("#repeat_password").val();
+	var registration_repeat_password = $("#repeat_password").val();
 	
-	//alert(name + ", " + email + ", " + password + ", " + repeat_password);
+	//alert(registration_name + ", " + registration_email + ", " + registration_password + ", " + registration_repeat_password);
 	
 	localStorage.setItem("registration_name", registration_name);
 
@@ -55,37 +50,33 @@ $("#formsubmit").on("click", function() {
 
 	var storagepassword = localStorage.getItem("registration_password");
 
+	//alert("Values from Local Storage " storagename + ", " + storageemail + ", " + storagepassword);
 
-	alert("Values from Local Storage " storagename + ", " + storageemail + ", " + storagepassword);
+	alert("You have successfully Registered");
+
+	$("#registration_form").toggle();
+
+	$("#login_form").toggle();
 
 });
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	
 //code retrieved from: http://jsfiddle.net/aelor/F6sEv/325/
 //single quotes changed to double quotes
 //element id's changed as appropriate
 	
-	$("#password, #repeat_password").on("keyup", function () {
-	
-    if ($("#password").val() === $("#repeat_password").val()) {
-		
-        $("#message").html("Password is matching").css("color", "green");
-		
-    } else 
-		
-        $("#message").html("Password is not matching").css("color", "red");
+$("#password, #repeat_password").on("keyup",function() {
+
+	if ($("#password").val() === 
+
+		$("#repeat_password").val()) {
+
+		$("#message").html("Matching").css("color", "green");
+
+	} else
+
+		$("#message").html("Not Matching").css("color", "red");
+
 });
-	
-	
-	
 	
 	
 	
